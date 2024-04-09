@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner teclado = new Scanner (System.in);
+		
+	
+	    double somatotal = 0;
+	    double media = 0; 
+		double i = 1;
+	
+		do{
+	    System.out.printf("Qual a nota:");
+	    double numero = teclado.nextFloat();
+		i ++;
+		somatotal += numero;
+		}
+		while(i <= 8);
+	    
+	    media = somatotal/8;
+	    
+	     System.out.println("Media:" + media);
