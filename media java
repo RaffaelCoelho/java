@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner teclado = new Scanner (System.in);
+		
+	
+	    double somatotal = 0;
+	    double media = 0; 
+		
+		for(int i = 0; i <= 7; i++)
+		{
+	    System.out.printf("Qual o primeiro numero:");
+	    double numero = teclado.nextFloat();
+		 
+		somatotal += numero;
+		}
+	    
+	    media = somatotal/8;
+	    
+	     System.out.println("Media:" + media);
+	    
+	
+	       
+	}
+}
