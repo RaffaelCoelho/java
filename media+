@@ -1,0 +1,61 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner teclado = new Scanner (System.in);
+		
+	
+	    double somatotal1 = 0;
+	    double somatotal2 = 0;
+	    double media1 = 0; 
+	    double media2 = 0; 
+		
+		
+		for(int i = 1; i <= 5; i++)
+		{
+	    System.out.printf("Qual a nota do primeiro aluno:");
+	    double nota1 = teclado.nextFloat();
+		somatotal1 += nota1;
+		}
+	    
+	    
+		for(int i = 1; i <= 5; i++)
+		{
+	    System.out.printf("Qual a nota do segundo aluno:");
+	    double nota2 = teclado.nextFloat();
+		somatotal2 += nota2;
+		}
+	    
+	 
+	    media1 = somatotal1/5;
+	    media2 = somatotal2/5;
+	    
+	     System.out.println("Media 1:" + media1);
+	     System.out.println("Media 2:" + media2);
+	    
+	    if (media1 >= 7){
+	        System.out.print("Primeiro aluno aprovado");
+	    } 
+	    if (media1 < 7 && media1 >= 4){
+	        System.out.print("Primeiro aluno reprovado com direito a recuperação");
+	    } 
+	    if (media1 < 4){
+	        System.out.print("Primeiro aluno reprovado");
+	    } 
+	
+	    if (media2 >= 7){
+	        System.out.print("\nSegundo aluno aprovado");
+	    } 
+	    if (media2 < 7 && media2 >= 4){
+	        System.out.print("\nSegundo aluno reprovado com direito a recuperação");
+	    } 
+	    if (media2 < 4){
+	        System.out.print("\nSegundo aluno reprovado");
+	    } 
+	
+	       
+	}
+}
