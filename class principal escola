@@ -2,11 +2,11 @@ import javax.swing.JOptionPane;
 
 public class Escola {
     public static void main(String[] args) {
-        // Criando instâncias de Aluno e Professor
+        
         Aluno aluno = new Aluno("João", "A", "123.456.789-00");
         Professor professor = new Professor("Maria", "456.789.123-00", "Matemática");
 
-        // Exibindo informações dos alunos e professores usando JOptionPane
+       
         mostrarDadosAluno(aluno);
         mostrarDadosProfessor(professor);
     }
