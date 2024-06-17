@@ -1,0 +1,29 @@
+import javax.swing.JOptionPane;
+
+public class Escola {
+    public static void main(String[] args) {
+        // Criando instâncias de Aluno e Professor
+        Aluno aluno = new Aluno("João", "A", "123.456.789-00");
+        Professor professor = new Professor("Maria", "456.789.123-00", "Matemática");
+
+        // Exibindo informações dos alunos e professores usando JOptionPane
+        mostrarDadosAluno(aluno);
+        mostrarDadosProfessor(professor);
+    }
+
+    public static void mostrarDadosAluno(Aluno aluno) {
+        String mensagem = "Dados do Aluno:\n" +
+                          "Nome: " + aluno.getNome() + "\n" +
+                          "Turma: " + aluno.getTurma() + "\n" +
+                          "CPF: " + aluno.getCpf();
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
+
+    public static void mostrarDadosProfessor(Professor professor) {
+        String mensagem = "Dados do Professor:\n" +
+                          "Nome: " + professor.getNome() + "\n" +
+                          "CPF: " + professor.getCpf() + "\n" +
+                          "Matéria: " + professor.getMateria();
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
+}
